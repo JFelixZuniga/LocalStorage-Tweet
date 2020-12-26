@@ -4,5 +4,5 @@
    <br/>
       https://jfelixzuniga.github.io/LocalStorage-Tweet/
    <br>
-   <img src="./chrome-capture.webm">
+   <img src="./chrome-cap.gif">
 </h2>
