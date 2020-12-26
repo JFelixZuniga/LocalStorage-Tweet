@@ -1,38 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/skeleton.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/social-media.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body>
     <div id="contenido">
-        <div class="container">
-
-            <h1>Local Storage</h1>
-            <div class="row">
-                <div class="six columns">
-                    <label for="tweet">Tweet:</label>
-                    <form  id="formulario">
-                            <label for="tweet"></label>
-                            <textarea id="tweet" class="u-full-width"></textarea>
-                            <input type="submit" class="button u-full-width button-primary" value="Agregar">
-                    </form>
-                </div>
-                <div class="six columns">
-                    <h2>Mis Tweets</h2>
-                    <div id="lista-tweets"></div>
-                </div>
-            </div>
-
+      <div class="container">
+        <h1>Local Storage</h1>
+        <div class="row">
+          <div class="six columns">
+            <label for="tweet">Tweet:</label>
+            <form id="formulario">
+              <label for="tweet"></label>
+              <textarea id="tweet" class="u-full-width"></textarea>
+              <input
+                type="submit"
+                class="button u-full-width button-primary"
+                value="Agregar"
+              />
+            </form>
+          </div>
+          <div class="six columns">
+            <h2>Mis Tweets</h2>
+            <div id="lista-tweets"></div>
+          </div>
         </div>
-    </div> <!--#contenido-->
+      </div>
+    </div>
+    <!--#contenido-->
 
-    <script src="js/app.js"></script>
-</body>
+    <!-- SOCIAL PANEL HTML -->
+    <div class="social-panel-container">
+      <div class="social-panel">
+        <p>
+          Created with <i class="fa fa-heart"></i>
+          by
+          <a target="_blank" href="#">JFZuniga</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <!-- <h4>Social Media</h4> -->
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/JomFelixZ"
+              target="_blank"
+              class="twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jfelixzuniga/"
+              target="_blank"
+              class="linkedin"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JFelixZuniga"
+              target="_blank"
+              class="github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">Social Media</button>
+
+    <div class="floating-text">
+      <a
+        href="https://twitter.com/search?q=%23100DaysOfCode&src=typeahead_click"
+        target="_blank"
+        >#100DaysOfCode</a
+      >
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/social-media.js"></script>
+  </body>
 </html>
